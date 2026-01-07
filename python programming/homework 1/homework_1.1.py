@@ -8,7 +8,7 @@ Created: 2023-06-21
 """
 
 
-def printTriangle(size):
+def printTriangle(size: int) -> None:
     """
     Prints a right triangle of asterisks of given size.
 
@@ -18,6 +18,7 @@ def printTriangle(size):
 
     base = size
 
+    # build the triangle line by line
     for i in range(size):
         print('*' * base)
         base = base - 1

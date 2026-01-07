@@ -19,7 +19,8 @@ def main() -> None:
     while datetime.datetime.now() < the_date:
         time.sleep(10)
 
-    print('Done')
+    # print message when the date is reached
+    print('Done.')
 
 
 if __name__ == "__main__":

@@ -7,7 +7,7 @@ Author: Christopher Romo
 """
 
 
-def print_picnic(items_dict, left_width, right_width):
+def print_picnic(items_dict: dict, left_width: int, right_width: int) -> None:
     """
     Prints a formatted picnic items list.
 
@@ -19,6 +19,7 @@ def print_picnic(items_dict, left_width, right_width):
 
     print('PICNIC ITEMS'.center(left_width + right_width, '-'))
 
+    # print each item with formatting
     for key, value in items_dict.items():
         print(key.ljust(left_width, '.') + str(value).rjust(right_width))
                 

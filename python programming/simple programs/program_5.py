@@ -10,7 +10,7 @@ Author: Christopher Romo
 import threading, time
 
 
-def sum(num_one, num_two, num_three):
+def sum(num_one: int, num_two: int, num_three: int) -> None:
     """
     Sums three numbers after a delay.
     
@@ -20,6 +20,7 @@ def sum(num_one, num_two, num_three):
         num_three: The third number.
     """
 
+    # wait for 5 seconds before summing and printing the result
     time.sleep(5)
     result = num_one + num_two + num_three
     print(result)

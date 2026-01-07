@@ -13,12 +13,12 @@ class BankAccount:
 
     account_counter = 0
 
-    def __init__(self):
+    def __init__(self) -> None:
         BankAccount.account_counter += 1
         self.account_number = BankAccount.account_counter
         self.balance = 0
 
-    def deposit(self, deposit_amount):
+    def deposit(self, deposit_amount: int) -> None:
         """
         Deposits the given amount into the account.
         
@@ -29,7 +29,7 @@ class BankAccount:
         self.balance += deposit_amount
         print(f"Account Number: {self.account_number}, Deposit Amount: {deposit_amount}, Updated Balance: {self.balance}")
 
-    def withdrawal(self, withdrawal_amount):
+    def withdrawal(self, withdrawal_amount: int) -> None:
         """
         Withdraws the given amount from the account if sufficient funds exist.
         
@@ -43,7 +43,7 @@ class BankAccount:
         else:
             print(f"Error: Insufficient Funds in Account Number: {self.account_number}")
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"Account Number: {self.account_number}, Current Balance: {self.balance}"
 
 

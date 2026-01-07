@@ -12,11 +12,11 @@ class Dog:
 
     species = "Canis familiaris"
 
-    def __init__(self, name, age):
+    def __init__(self, name: str, age: int) -> None:
         self.name = name
         self.age = age
 
-    def speak(self, sound):
+    def speak(self, sound: str) -> str:
         """
         Returns a string representing the sound the dog makes.
         
@@ -29,17 +29,17 @@ class Dog:
 
         return f"{self.name} says {sound}."
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"{self.name} is {self.age} years old."
 
 
 class GoldenRetriever(Dog):
     """A Golden Retriever class that inherits from Dog."""
 
-    def __init__(self, name, age):
+    def __init__(self, name: str, age: int) -> None:
         super().__init__(name, age)
 
-    def speak(self, sound = "Bark"):
+    def speak(self, sound: str = "Bark") -> str:
         """
         Returns a string representing the sound the golden retriever makes.
         
@@ -59,6 +59,7 @@ def main() -> None:
     # demonstration of the Dog and GoldenRetriever classes
     max = GoldenRetriever('Max', 9)
     
+    # print details and sounds
     print(max.speak())
     print(max.speak("Hello"))
     print(max.__str__())
