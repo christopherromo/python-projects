@@ -46,7 +46,7 @@ def main() -> None:
     Next N Lines: State transitions (space-separated integers for each state)
     Last Line: Accept states (space-separated integers)
     """
-    input_file = open('dfa_input.txt', 'r')
+    input_file = open('dfa_states1_input.txt', 'r')
 
     # read the alphabet
     alphabet_string = input_file.readline()
