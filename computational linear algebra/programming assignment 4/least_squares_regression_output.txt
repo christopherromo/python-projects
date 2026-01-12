@@ -1,0 +1,20 @@
+Here are the two coordinate matrices:
+
+x:
+[[25.]
+ [30.]
+ [35.]
+ [40.]]
+
+y:
+[[82.]
+ [75.]
+ [67.]
+ [55.]]
+
+Here is the coefficient matrix:
+[[127.6]
+ [ -1.8]]
+
+Last but not least, the least squares regression line is:
+y = 127.6 + (-1.8x)

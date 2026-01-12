@@ -1,0 +1,18 @@
+Here are the two input matrices:
+
+d:
+[[0.4 0.5 0.5]
+ [0.3 0.  0.3]
+ [0.2 0.2 0. ]]
+
+e:
+[[1000.]
+ [1000.]
+ [1000.]]
+
+And here is the result matrix:
+[[8620.]
+ [4690.]
+ [3660.]]
+
+With A, B, and C corresponding to row 1, 2, and 3.
