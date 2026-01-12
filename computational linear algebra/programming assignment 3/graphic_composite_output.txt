@@ -1,0 +1,21 @@
+Here are the matrices used to make the transformations:
+
+Rotation Matrix:
+[[ 0.52532199 -0.85090352  0.        ]
+ [ 0.85090352  0.52532199  0.        ]
+ [ 0.          0.          1.        ]]
+
+Shearing Matrix:
+[[1.  0.4 0. ]
+ [0.  1.  0. ]
+ [0.  0.  1. ]]
+
+Scaling Matrix:
+[[0.6 0.  0. ]
+ [0.  1.  0. ]
+ [0.  0.  1. ]]
+
+Composite Transformation Matrix:
+[[ 0.51941004 -0.38446484  0.        ]
+ [ 0.85090352  0.52532199  0.        ]
+ [ 0.          0.          1.        ]]

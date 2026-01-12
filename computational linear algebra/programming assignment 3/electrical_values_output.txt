@@ -1,0 +1,8 @@
+Here are all of the currents in terms of i6 (the free variable).
+
+In terms of i6 (-1.5555555555555556), i1: -3.0.
+In terms of i6 (0.7777777777777778), i2: -1.0.
+In terms of i6 (2.3333333333333335), i3: 2.0.
+In terms of i6 (2.3333333333333335), i4: 2.0.
+In terms of i6 (1.3333333333333333), i5: 2.0.
+In terms of i6 (0.0), i6: 0.0.

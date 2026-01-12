@@ -21,6 +21,8 @@ def main() -> None:
     the_list = input_file.readlines()
     the_list_len = len(the_list)
 
+    input_file.close()
+
     # go through the list and strip the newline characters
     for i in range(0, the_list_len):
         the_list[i] = str(the_list[i]).strip()
