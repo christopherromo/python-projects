@@ -23,7 +23,7 @@ class BankAccount:
         Deposits the given amount into the account.
         
         Args:
-            deposit_amount: The amount to deposit.
+            deposit_amount (int): The amount to deposit.
         """
 
         self.balance += deposit_amount
@@ -34,7 +34,7 @@ class BankAccount:
         Withdraws the given amount from the account if sufficient funds exist.
         
         Args:
-            withdrawal_amount: The amount to withdraw.
+            withdrawal_amount (int): The amount to withdraw.
         """
 
         if self.balance >= withdrawal_amount:

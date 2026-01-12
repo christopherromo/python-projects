@@ -13,9 +13,9 @@ def make_matrix(matrix: list, num_row: int, num_col: int) -> None:
     Initializes a 2D list (matrix) with given number of rows and columns filled with zeros.
 
     Args:
-        matrix: The 2D list to be initialized.
-        num_row: The number of rows in the matrix.
-        num_col: The number of columns in the matrix.
+        matrix (list): The 2D list to be initialized.
+        num_row (int): The number of rows in the matrix.
+        num_col (int): The number of columns in the matrix.
     """
 
     for i in range(0, num_row):
@@ -31,12 +31,12 @@ def fill_matrix(file_name: str, num_row: int, num_col: int, total: int, total_ad
     Fills a matrix with values and writes it to a file.
     
     Args:
-        file_name: The name of the file to write the matrix to.
-        num_row: The number of rows in the matrix.
-        num_col: The number of columns in the matrix.
-        total: The starting value to fill the matrix with.
-        total_add: The value to add for each subsequent element.
-        flip: If True, fills the matrix column-wise; if False, fills row-wise.
+        file_name (str): The name of the output file.
+        num_row (int): The number of rows in the matrix.
+        num_col (int): The number of columns in the matrix.
+        total (int): The starting value to fill the matrix.
+        total_add (int): The value to add for each subsequent element.
+        flip (bool): If True, fills the matrix column-wise; if False, fills row-wise.
     """
 
     file = open(file_name, 'w')

@@ -31,7 +31,7 @@ def main() -> None:
     print(sheet.title)
 
     # rename the sheet
-    sheet.title = 'Number and its square'
+    sheet.title = 'number and its square'
     print(wb.sheetnames)
 
     # write values to the sheet
@@ -52,6 +52,7 @@ def main() -> None:
 
     # save the new workbook
     wb.save('test_two.xlsx')
+    wb.close()
 
 
 if __name__ == "__main__":

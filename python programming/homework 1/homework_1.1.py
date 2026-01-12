@@ -13,7 +13,7 @@ def printTriangle(size: int) -> None:
     Prints a right triangle of asterisks of given size.
 
     Args:
-        size: The size of the triangle.
+        size (int): The size of the triangle.
     """
 
     base = size

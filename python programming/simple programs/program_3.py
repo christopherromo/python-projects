@@ -21,10 +21,10 @@ class Dog:
         Returns a string representing the sound the dog makes.
         
         Args:
-            sound: The sound the dog makes.
+            sound (str): The sound the dog makes.
 
         Returns:
-            A string in the format "<name> says <sound>."
+            str: A string in the format "<name> says <sound>."
         """
 
         return f"{self.name} says {sound}."
@@ -44,10 +44,10 @@ class GoldenRetriever(Dog):
         Returns a string representing the sound the golden retriever makes.
         
         Args:
-            sound: The sound the golden retriever makes (default is "Bark").
+            sound (str): The sound the golden retriever makes (default is "Bark").
         
         Returns:
-            A string in the format "<name> says <sound>."
+            str: A string in the format "<name> says <sound>."
         """
 
         return f"{self.name} says {sound}."

@@ -13,13 +13,13 @@ def next_state(current_state: int, input: str, alphabet: list, states: list) -> 
     Determines the next state based on the current state and input character.
 
     Args:
-        current_state: The current state of the DFA.
-        input: The current input character.
-        alphabet: The list of symbols in the DFA's alphabet.
-        states: The transition table representing state transitions.
+        current_state (int): The current state as an integer.
+        input (str): The current input character.
+        alphabet (list): The list of characters in the DFA's alphabet.
+        states (list): The list of state transitions.
 
     Returns:
-        The next state as an integer.
+        int: The next state as an integer.
     """
         
     # find the x position in states list

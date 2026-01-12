@@ -16,10 +16,10 @@ def merge_sort(a_list: list) -> list:
     Performs merge sort on a list of numbers.
 
     Args:
-        a_list: The list of numbers to be sorted.
+        a_list (list): The list of numbers to be sorted.
 
     Returns:
-        The sorted list of numbers.
+        list: The sorted list of numbers.
     """
 
     a_list_len = len(a_list)

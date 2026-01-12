@@ -15,9 +15,9 @@ def sum(num_one: int, num_two: int, num_three: int) -> None:
     Sums three numbers after a delay.
     
     Args:
-        num_one: The first number.
-        num_two: The second number.
-        num_three: The third number.
+        num_one (int): The first number.
+        num_two (int): The second number.
+        num_three (int): The third number.
     """
 
     # wait for 5 seconds before summing and printing the result
