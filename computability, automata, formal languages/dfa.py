@@ -39,13 +39,12 @@ def next_state(current_state: int, input: str, alphabet: list, states: list) -> 
 def main() -> None:
     """Program entry point."""
     
-    """
-    Input file format:
-    Line 1: Alphabet (string of characters)
-    Line 2: Number of states (integer)
-    Next N Lines: State transitions (space-separated integers for each state)
-    Last Line: Accept states (space-separated integers)
-    """
+    # Input file format:
+    # Line 1: Alphabet (string of characters)
+    # Line 2: Number of states (integer)
+    # Next N Lines: State transitions (space-separated integers for each state)
+    # Last Line: Accept states (space-separated integers)
+    
     input_file = open('dfa_states1_input.txt', 'r')
 
     # read the alphabet

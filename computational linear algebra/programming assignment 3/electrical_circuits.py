@@ -15,25 +15,23 @@ import sympy
 def main() -> None:
     """Program entry point."""
    
-    """
-    the plan
+    # the plan
 
-    node a // i2 = i1 + i3 // -i1 + i2 - i3 = 0
-    node b // i2 = i1 + i4 // -i1 + i2 - i4 = 0
-    node c // i5 = i3 + i6 // -i3 + i5 - i6 = 0
-    node d // i5 = i4 + i6 // -i4 + i5 - i6 = 0
-    top loop    // -i2r2 - i1r1 = e1
-    bottom loop // i5r3 + i6r4 = e2
+    # node a // i2 = i1 + i3 // -i1 + i2 - i3 = 0
+    # node b // i2 = i1 + i4 // -i1 + i2 - i4 = 0
+    # node c // i5 = i3 + i6 // -i3 + i5 - i6 = 0
+    # node d // i5 = i4 + i6 // -i4 + i5 - i6 = 0
+    # top loop    // -i2r2 - i1r1 = e1
+    # bottom loop // i5r3 + i6r4 = e2
 
-    i1,i2,i3,i4,i5,i6,result
+    # i1,i2,i3,i4,i5,i6,result
 
-    [[-1,1,-1,0,0,0,0]
-    [-1,1,0,-1,0,0,0]
-    [0,0,-1,0,1,-1,0]
-    [0,0,0,-1,1,-1,0]
-    [(-1 * r1),(-1 * r2),0,0,0,0,e1]
-    [0,0,0,0,(1 * r3),(1 * r4),e2]]
-    """
+    # [[-1,1,-1,0,0,0,0]
+    #  [-1,1,0,-1,0,0,0]
+    #  [0,0,-1,0,1,-1,0]
+    #  [0,0,0,-1,1,-1,0]
+    #  [(-1 * r1),(-1 * r2),0,0,0,0,e1]
+    #  [0,0,0,0,(1 * r3),(1 * r4),e2]]
 
     # import the information
     input_file = open('electrical_circuits_input.txt', 'r')

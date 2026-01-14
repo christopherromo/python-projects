@@ -1,16 +1,36 @@
-base2 = 'Ol'
-base8 = 'O1234567'
-base10 = 'O123456789'
-base16 = 'O123456789ABCDEF'
-duodecimal = 'O123456789AB'
-aliens = 'ᐁᐃᐄᐅᐆᐇᐉᐊᐋᐖᐛᐯᐱᐲᐳᐴᐵᐷᐸᐹᑀᑂᑅᑇᑈᑌᑍᑎᑏᑐᑑᑒᑓᑔᑕᑖᑝᑟᑢᑤᑥᑫᑭᑮᑯᑰᑱᑲᒉᒋᒌᒍᒏᒐᒒᒕᒗᒘᒝ'
-babylonian = ['𒊹𒊹','𒊹𒑰','𒊹𒈫','𒊹𒐈','𒊹𒐉','𒊹𒐊','𒊹𒐋','𒊹𒑂','𒊹𒑄','𒊹𒑆','𒌋𒊹','𒌋𒑰','𒌋𒈫','𒌋𒐈','𒌋𒐉','𒌋𒐊','𒌋𒐋','𒌋𒑂','𒌋𒑄','𒌋𒑆','𒎙𒊹','𒎙𒑰','𒎙𒈫','𒎙𒐈','𒎙𒐉','𒎙𒐊','𒎙𒐋','𒎙𒑂','𒎙𒑄','𒎙𒑆','𒌍𒊹','𒌍𒑰','𒌍𒈫','𒌍𒐈','𒌍𒐉','𒌍𒐊','𒌍𒐋','𒌍𒑂','𒌍𒑄','𒌍𒑆','𒑩𒊹','𒑩𒑰','𒑩𒈫','𒑩𒐈','𒑩𒐉','𒑩𒐊','𒑩𒐋','𒑩𒑂','𒑩𒑄','𒑩𒑆','𒑪𒊹','𒑪𒑰','𒑪𒈫','𒑪𒐈','𒑪𒐉','𒑪𒐊','𒑪𒐋','𒑪𒑂','𒑪𒑄','𒑪𒑆']
+"""
+what_is_in_a_base.py
 
-# DO NOT MODIFY THIS FUNCTION! IT IS USED INSTEAD OF assert TO TEST YOUR CODE
-def expectEqual(a, b):
+Exercises involving number bases.
+
+Author: Christopher Romo
+"""
+
+
+def expect_equal(a: any, b: any) -> None:
+    """
+    Compares two values and prints a message if they are not equal.
+
+    Args:
+        a (any): The first value.
+        b (any): The second value.
+    """
+
     if a != b: print('FAIL expected:', b, ' got:', a)
 
-def stringToInt(number, base):
+
+def string_to_int(number: str, base: str) -> int:
+    """
+    Converts a string representation of a number in a given base to an integer.
+
+    Args:
+        number (str): The string representation of the number.
+        base (str): The base string representing the digits of the base.
+
+    Returns:
+        int: The integer representation of the number.
+    """
+
     # initialize variables
     base_len = len(base)
     num_len = len(number)
@@ -42,20 +62,18 @@ def stringToInt(number, base):
     # return the integer
     return ret_int
 
-expectEqual(stringToInt('2O', base10), 20)
-expectEqual(stringToInt('31337', base10), 31337)
-expectEqual(stringToInt('lOlOO', base2), 20)
-expectEqual(stringToInt('llllOlOOllOlOOl', base2), 31337)
-expectEqual(stringToInt('2O', base8), 16)
-expectEqual(stringToInt('31337', base8), 13023)
-expectEqual(stringToInt('2O', base16), 32)
-expectEqual(stringToInt('31337', base16), 201527)
-expectEqual(stringToInt('ᑀ', aliens), 20)
-expectEqual(stringToInt('𒎙𒊹', babylonian), 20)
-expectEqual(stringToInt('𒊹𒈫𒊹𒐈', babylonian), 123)
-expectEqual(stringToInt('bb','ab'), 3)
 
-def intToString(integer, base):
+def int_to_string(integer: int, base: str) -> str:
+    """
+    Converts an integer to its string representation in a given base.
+
+    Args:
+        integer (int): The integer to convert.
+        base (str): The base string representing the digits of the base.
+
+    Returns:
+        str: The string representation of the number in the given base.
+    """
 
     # initialize variables
     base_len = len(base)
@@ -85,47 +103,112 @@ def intToString(integer, base):
     # return the string
     return return_string
 
-expectEqual(intToString(1230,base10), '123O')
-expectEqual(intToString(31337,base10), '31337')
-expectEqual(intToString(123,base2), 'llllOll')
-expectEqual(intToString(31337,base2), 'llllOlOOllOlOOl')
-expectEqual(intToString(31337,base8), '75151')
-expectEqual(intToString(123,base8), '173')
-expectEqual(intToString(123,duodecimal), 'A3')
-expectEqual(intToString(31337,duodecimal), '16175')
-expectEqual(intToString(123,base16), '7B')
-expectEqual(intToString(31337,base16), '7A69')
-expectEqual(intToString(123,aliens), 'ᐄᐇ')
-expectEqual(intToString(123,babylonian), '𒊹𒈫𒊹𒐈')
-expectEqual(intToString(51,babylonian), '𒑪𒑰')
-expectEqual(intToString(7,'ab'),'bbb')
 
-def add(a,b, base):
+def add(a: str, b: str, base: str) -> str:
+    """
+    Adds two numbers represented as strings in a given base.
+
+    Args:
+        a (str): The first number as a string.
+        b (str): The second number as a string.
+        base (str): The base string representing the digits of the base.
+
+    Returns:
+        str: The sum of the two numbers as a string in the given base.
+    """
     
     # turn both strings into integers
-    a_int = stringToInt(a, base)
-    b_int = stringToInt(b, base)
+    a_int = string_to_int(a, base)
+    b_int = string_to_int(b, base)
 
     # add the two values
     return_int = a_int + b_int
 
     # turn the int back into a string
-    return_string = intToString(return_int, base)
+    return_string = int_to_string(return_int, base)
     
     # return the string
     return return_string
 
-expectEqual(add('123','123',base10), '246')
-expectEqual(add('98','123',base10), '221')
-expectEqual(add('lOl','lO',base2), 'lll')
-expectEqual(add('lOlO','lO',base2), 'llOO')
-expectEqual(add('123','123',base8), '246')
-expectEqual(add('4563','77',base8), '4662')
-expectEqual(add('123','123',duodecimal), '246')
-expectEqual(add('123','123',base16), '246')
-expectEqual(add('4563','78',base16), '45DB')
-expectEqual(add('ᐄᐇ','ᑅᑇᑈ',aliens), 'ᑅᑌᑐ')
-expectEqual(add('ᒍᒏᒐ','ᒍᒏᒐ',aliens), 'ᐃᑯᑱᑲ')
-expectEqual(add('ᒒᒕᒗᒘᒝ','ᑅᑇᑈ',aliens), 'ᒒᒗᑀᑅᑇ')
-expectEqual(add('𒊹𒑰𒊹𒈫𒊹𒐈','𒊹𒑰𒊹𒈫𒊹𒐈',babylonian), '𒊹𒈫𒊹𒐉𒊹𒐋')
-expectEqual(add('𒑪𒑄','𒑪𒑆',babylonian), '𒊹𒑰𒑪𒑂')
+
+def main() -> None:
+    """Program entry point."""
+
+    # originally a jupyter notebook exercise
+
+    base2 = 'Ol'
+    base8 = 'O1234567'
+    base10 = 'O123456789'
+    base16 = 'O123456789ABCDEF'
+    duodecimal = 'O123456789AB'
+    aliens = 'ᐁᐃᐄᐅᐆᐇᐉᐊᐋᐖᐛᐯᐱᐲᐳᐴᐵᐷᐸᐹᑀᑂᑅᑇᑈᑌᑍᑎᑏᑐᑑᑒᑓᑔᑕᑖᑝᑟᑢᑤᑥᑫᑭᑮᑯᑰᑱᑲᒉᒋᒌᒍᒏᒐᒒᒕᒗᒘᒝ'
+    babylonian = ['𒊹𒊹','𒊹𒑰','𒊹𒈫','𒊹𒐈','𒊹𒐉','𒊹𒐊','𒊹𒐋','𒊹𒑂','𒊹𒑄','𒊹𒑆','𒌋𒊹','𒌋𒑰','𒌋𒈫','𒌋𒐈','𒌋𒐉','𒌋𒐊','𒌋𒐋','𒌋𒑂','𒌋𒑄','𒌋𒑆','𒎙𒊹','𒎙𒑰','𒎙𒈫','𒎙𒐈','𒎙𒐉','𒎙𒐊','𒎙𒐋','𒎙𒑂','𒎙𒑄','𒎙𒑆','𒌍𒊹','𒌍𒑰','𒌍𒈫','𒌍𒐈','𒌍𒐉','𒌍𒐊','𒌍𒐋','𒌍𒑂','𒌍𒑄','𒌍𒑆','𒑩𒊹','𒑩𒑰','𒑩𒈫','𒑩𒐈','𒑩𒐉','𒑩𒐊','𒑩𒐋','𒑩𒑂','𒑩𒑄','𒑩𒑆','𒑪𒊹','𒑪𒑰','𒑪𒈫','𒑪𒐈','𒑪𒐉','𒑪𒐊','𒑪𒐋','𒑪𒑂','𒑪𒑄','𒑪𒑆']
+
+    # task 1
+
+    # Implement a number parser. The function should take a string representation
+    # of a number and a base and convert the string into a Python integer. Note:
+    # in all deliverables, hard-coded components may help you pass tests, but they
+    # will receive very few points. For example, the character 'O' always has the
+    # value 0, but we will not look favorably on code which says something like if
+    # character=='O' : value = 0. Your code should infer the value of the character
+    # 'O' based on its position in the string base2, etc.
+
+    expect_equal(string_to_int('2O', base10), 20)
+    expect_equal(string_to_int('31337', base10), 31337)
+    expect_equal(string_to_int('lOlOO', base2), 20)
+    expect_equal(string_to_int('llllOlOOllOlOOl', base2), 31337)
+    expect_equal(string_to_int('2O', base8), 16)
+    expect_equal(string_to_int('31337', base8), 13023)
+    expect_equal(string_to_int('2O', base16), 32)
+    expect_equal(string_to_int('31337', base16), 201527)
+    expect_equal(string_to_int('ᑀ', aliens), 20)
+    expect_equal(string_to_int('𒎙𒊹', babylonian), 20)
+    expect_equal(string_to_int('𒊹𒈫𒊹𒐈', babylonian), 123)
+    expect_equal(string_to_int('bb','ab'), 3)
+
+    # task 2
+
+    # Given an integer and a base, generate the string representation of number in given base.
+
+    expect_equal(int_to_string(1230,base10), '123O')
+    expect_equal(int_to_string(31337,base10), '31337')
+    expect_equal(int_to_string(123,base2), 'llllOll')
+    expect_equal(int_to_string(31337,base2), 'llllOlOOllOlOOl')
+    expect_equal(int_to_string(31337,base8), '75151')
+    expect_equal(int_to_string(123,base8   ), '173')
+    expect_equal(int_to_string(123,duodecimal), 'A3')
+    expect_equal(int_to_string(31337,duodecimal), '16175')
+    expect_equal(int_to_string(123,base16), '7B')
+    expect_equal(int_to_string(31337,base16), '7A69')
+    expect_equal(int_to_string(123,aliens), 'ᐄᐇ')
+    expect_equal(int_to_string(123,babylonian), '𒊹𒈫𒊹𒐈')
+    expect_equal(int_to_string(51,babylonian), '𒑪𒑰')
+    expect_equal(int_to_string(7,'ab'),'bbb')
+    
+    # task 3
+
+    # In the real world, we would just take the functions we just created above,
+    # combine them with the existing addition facilities in the computer and compute
+    # sums of numbers represented in any base. But, this isn't the real world at all.
+    # This is Discrete Structures. Implement a generic function that performs addition
+    # in-base (with carries and everything).
+
+    expect_equal(add('123','123',base10), '246')
+    expect_equal(add('98','123',base10), '221')
+    expect_equal(add('lOl','lO',base2), 'lll')
+    expect_equal(add('lOlO','lO',base2), 'llOO')
+    expect_equal(add('123','123',base8), '246')
+    expect_equal(add('4563','77',base8), '4662')
+    expect_equal(add('123','123',duodecimal), '246')
+    expect_equal(add('123','123',base16), '246')
+    expect_equal(add('4563','78',base16), '45DB')
+    expect_equal(add('ᐄᐇ','ᑅᑇᑈ',aliens), 'ᑅᑌᑐ')
+    expect_equal(add('ᒍᒏᒐ','ᒍᒏᒐ',aliens), 'ᐃᑯᑱᑲ')
+    expect_equal(add('ᒒᒕᒗᒘᒝ','ᑅᑇᑈ',aliens), 'ᒒᒗᑀᑅᑇ')
+    expect_equal(add('𒊹𒑰𒊹𒈫𒊹𒐈','𒊹𒑰𒊹𒈫𒊹𒐈',babylonian), '𒊹𒈫𒊹𒐉𒊹𒐋')
+    expect_equal(add('𒑪𒑄','𒑪𒑆',babylonian), '𒊹𒑰𒑪𒑂')
+
+
+if __name__ == "__main__":
+    main()
