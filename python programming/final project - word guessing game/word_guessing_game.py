@@ -1,7 +1,7 @@
 """
 word_guessing_game.py
 
-Word guessing game that fetches words from a website and stores them in an 
+Word guessing game that fetches words from a website and stores them in an
 Excel file.
 
 Author: Christopher Romo & Alyssa Walker

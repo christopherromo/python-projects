@@ -17,7 +17,7 @@ def format_matrix(the_array: numpy.array) -> numpy.array:
     Formats the input array to reorder the columns for drawing the letter 'A'.
 
     Args:
-        the_array (numpy.array): A 3xN array where each column represents a 
+        the_array (numpy.array): A 3xN array where each column represents a
         point (x, y, 1).
 
     Returns:
@@ -45,11 +45,11 @@ def format_matrix(the_array: numpy.array) -> numpy.array:
 
 def draw_a(the_array: numpy.array) -> None:
     """
-    Draws the letter 'A' based on the provided 2D array of points with columns 
+    Draws the letter 'A' based on the provided 2D array of points with columns
     formatted in the order: 1, 4, 5, 3, 2.
 
     Args:
-        the_array (numpy.array): A 3xN array where each column represents a 
+        the_array (numpy.array): A 3xN array where each column represents a
         point (x, y, 1).
     """
 
@@ -144,7 +144,7 @@ def main() -> None:
                 letter_a = numpy.dot(rotation_matrix, letter_a)
                 letter_a = numpy.dot(move_back_from_origin_matrix, letter_a)
 
-                # add matrices to composite file and multiply with composite 
+                # add matrices to composite file and multiply with composite
                 # matrix
                 graphic_composite_output.write("\n\nRotation Matrix:\n")
                 graphic_composite_output.write(str(rotation_matrix))
@@ -155,7 +155,7 @@ def main() -> None:
                 shearing_matrix = numpy.array([[1, x_shear, 0], [0, 1, 0], [0, 0, 1]])
                 letter_a = numpy.dot(shearing_matrix, letter_a)
 
-                # add matrix to composite file and multiply with composite 
+                # add matrix to composite file and multiply with composite
                 # matrix
                 graphic_composite_output.write("\n\nShearing Matrix:\n")
                 graphic_composite_output.write(str(shearing_matrix))
@@ -166,7 +166,7 @@ def main() -> None:
                 scaling_matrix = numpy.array([[x_scale, 0, 0], [0, 1, 0], [0, 0, 1]])
                 letter_a = numpy.dot(scaling_matrix, letter_a)
 
-                # add matrix to composite file and multiply with composite 
+                # add matrix to composite file and multiply with composite
                 # matrix
                 graphic_composite_output.write("\n\nScaling Matrix:\n")
                 graphic_composite_output.write(str(scaling_matrix))

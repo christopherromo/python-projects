@@ -44,7 +44,7 @@ class GoldenRetriever(Dog):
         Returns a string representing the sound the golden retriever makes.
 
         Args:
-            sound (str): The sound the golden retriever makes (default is 
+            sound (str): The sound the golden retriever makes (default is
             "Bark").
 
         Returns:

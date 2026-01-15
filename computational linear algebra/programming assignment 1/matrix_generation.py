@@ -39,7 +39,7 @@ def fill_matrix(
         num_col (int): The number of columns in the matrix.
         total (int): The starting value to fill the matrix.
         total_add (int): The value to add for each subsequent element.
-        flip (bool): If True, fills the matrix column-wise; if False, fills 
+        flip (bool): If True, fills the matrix column-wise; if False, fills
         row-wise.
     """
 

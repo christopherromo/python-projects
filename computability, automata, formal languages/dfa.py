@@ -1,7 +1,7 @@
 """
 dfa.py
 
-Implements a deterministic finite automaton (DFA) that reads its configuration 
+Implements a deterministic finite automaton (DFA) that reads its configuration
 from a file.
 
 Author: Christopher Romo

@@ -43,7 +43,7 @@ def main() -> None:
         for j in range(0, the_list_len):
             # if the index we are on is past the sorted list so far
             if j > i:
-                # if this number is smaller than the current smallest, save the 
+                # if this number is smaller than the current smallest, save the
                 # index
                 if the_list[index] > the_list[j]:
                     index = j

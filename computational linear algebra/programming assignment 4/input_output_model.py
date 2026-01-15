@@ -1,7 +1,7 @@
 """
 input_output_model.py
 
-Implements the input-output model to find the total output required to satisfy 
+Implements the input-output model to find the total output required to satisfy
 external demand.
 
 Author: Christopher Romo
