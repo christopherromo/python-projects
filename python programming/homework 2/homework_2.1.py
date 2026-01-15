@@ -14,10 +14,10 @@ def main() -> None:
     counter_one = 0
     counter_two = 0
 
-    the_string = input('Please, enter a word: ')
+    the_string = input("Please, enter a word: ")
     the_string.lower()
 
-    the_new_string = ''
+    the_new_string = ""
 
     the_length = len(the_string)
     replace_length = int(the_length / 2)
@@ -35,7 +35,7 @@ def main() -> None:
         replace_length = replace_length - 1
 
     # print the result
-    print('Output: ', end='')
+    print("Output: ", end="")
     print(the_new_string)
 
 

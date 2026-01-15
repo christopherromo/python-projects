@@ -21,25 +21,29 @@ class BankAccount:
     def deposit(self, deposit_amount: int) -> None:
         """
         Deposits the given amount into the account.
-        
+
         Args:
             deposit_amount (int): The amount to deposit.
         """
 
         self.balance += deposit_amount
-        print(f"Account Number: {self.account_number}, Deposit Amount: {deposit_amount}, Updated Balance: {self.balance}")
+        print(
+            f"Account Number: {self.account_number}, Deposit Amount: {deposit_amount}, Updated Balance: {self.balance}"
+        )
 
     def withdrawal(self, withdrawal_amount: int) -> None:
         """
         Withdraws the given amount from the account if sufficient funds exist.
-        
+
         Args:
             withdrawal_amount (int): The amount to withdraw.
         """
 
         if self.balance >= withdrawal_amount:
             self.balance = self.balance - withdrawal_amount
-            print(f"Account Number: {self.account_number}, Withdrawal Amount: {withdrawal_amount}, Updated Balance: {self.balance}")
+            print(
+                f"Account Number: {self.account_number}, Withdrawal Amount: {withdrawal_amount}, Updated Balance: {self.balance}"
+            )
         else:
             print(f"Error: Insufficient Funds in Account Number: {self.account_number}")
 
@@ -49,7 +53,7 @@ class BankAccount:
 
 def main() -> None:
     """Program entry point."""
-    
+
     # demonstration of the BankAccount class
     taylors_account = BankAccount()
     taylors_account.deposit(3000)

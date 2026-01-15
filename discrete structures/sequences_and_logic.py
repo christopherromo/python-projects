@@ -13,18 +13,19 @@ def closed_pie(n: int) -> float:
 
     Args:
         n (int): The number of cuts.
-    
+
     Returns:
         float: The maximum number of pieces.
     """
 
-    pie_pieces = ((n ** 2) + n + 2) / 2
+    pie_pieces = ((n**2) + n + 2) / 2
     return pie_pieces
 
 
 def recursive_pie(n: int) -> float:
     """
-    Returns the maximum number of pieces we could get with n cuts using recursion.
+    Returns the maximum number of pieces we could get with n cuts using
+    recursion.
 
     Args:
         n (int): The number of cuts.
@@ -94,7 +95,7 @@ def main() -> None:
     """Program entry point."""
 
     # originally a jupyter notebook exercise
-    
+
     # task 1
 
     # Your task is to define a Python function closed_pie(n) that returns the
@@ -103,18 +104,18 @@ def main() -> None:
     # you complete the body of the function.
 
     print("task 1 output:")
-    print([closed_pie(x) for x in range(1,16)])
-    
+    print([closed_pie(x) for x in range(1, 16)])
+
     # task 2
 
     # Your task is to define a Python function recursive_pie(n) based on this
-    # formula that returns the maximum number of pieces we could get with n cuts.
-    # Note that this function should be recursive; that is it should call itself
-    # in the process of obtaining the answer. Again a print statement is provided
-    # that will print the first 15 elements of the sequence.
+    # formula that returns the maximum number of pieces we could get with n
+    # cuts. Note that this function should be recursive; that is it should call
+    # itself in the process of obtaining the answer. Again a print statement is
+    # provided that will print the first 15 elements of the sequence.
 
     print("\ntask 2 output:")
-    print([recursive_pie(x) for x in range(1,16)])
+    print([recursive_pie(x) for x in range(1, 16)])
 
     # task 3
 
@@ -126,8 +127,8 @@ def main() -> None:
     # task 4
 
     # Your final task is to use the logical equivalences given in Theorem 2
-    # from the book to simplify the statement from Deliverable \#3, and then
-    # provide a new, simpler, and equivalent function (a_calm_function_emerges).
+    # from the book to simplify the statement from Deliverable #3, and then
+    # provide a simpler and equivalent function (a_calm_function_emerges).
 
     # -(s or r) and ((r and (p or q)) or (p or q))
 

@@ -2,7 +2,6 @@
 homework_1.3.py
 
 Prints all characters that appear more than once in a given string.
-Assumes input is a string.
 
 Author: Christopher Romo
 Created: 2023-06-21
@@ -12,7 +11,8 @@ Created: 2023-06-21
 def main() -> None:
     """Program entry point."""
 
-    the_original_string = input('Input: ')
+    # assumes input is a string
+    the_original_string = input("Input: ")
     the_string = the_original_string.lower()
     the_dict = dict()
 
@@ -26,7 +26,7 @@ def main() -> None:
     # print characters that appear more than once
     for key, value in the_dict.items():
         if value > 1:
-            print(key, end = ' ')
+            print(key, end=" ")
 
 
 if __name__ == "__main__":

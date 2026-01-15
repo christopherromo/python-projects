@@ -7,7 +7,6 @@ Author: Christopher Romo
 Created: 2024-02-08
 """
 
-
 import time
 
 
@@ -60,24 +59,24 @@ def merge_sort(a_list: list) -> list:
 
         # while both lists have values to add to the return list
         while first_list_empty == False and second_list_empty == False:
-            if i == len(first_list):                
+            if i == len(first_list):
                 # terminate loop by switching boolean
                 first_list_empty = True
-            elif j == len(second_list):             
+            elif j == len(second_list):
                 # terminate loop by switching boolean
                 second_list_empty = True
-            elif first_list[i] < second_list[j]:    
+            elif first_list[i] < second_list[j]:
                 # append value to return list and increment i
                 return_list.append(first_list[i])
                 i += 1
-            else:                                   
+            else:
                 # append value to return list and increment j
                 return_list.append(second_list[j])
                 j += 1
 
         # if first list is not empty, add remaining values to return list
         while first_list_empty == False:
-            if i == len(first_list):                
+            if i == len(first_list):
                 # terminate loop by switching boolean
                 first_list_empty = True
             else:
@@ -86,22 +85,22 @@ def merge_sort(a_list: list) -> list:
 
         # if second list is not empty, add remaining values to return list
         while second_list_empty == False:
-            if j == len(second_list):               
+            if j == len(second_list):
                 # terminate loop by switching boolean
                 second_list_empty = True
             else:
                 return_list.append(second_list[j])
                 j += 1
-        
+
         # return the list
         return return_list
-        
+
 
 def main() -> None:
     """Program entry point."""
 
     # read in the list from a file and grab the length
-    input_file = open('sort_list3_input.txt', 'r')
+    input_file = open("sort_list3_input.txt", "r")
 
     the_list = input_file.readlines()
     the_list_len = len(the_list)
@@ -114,9 +113,9 @@ def main() -> None:
         the_list[i] = int(the_list[i])
 
     # print pre-sort list
-    print('Pre-Sort:')
-    print(the_list)  
-        
+    print("Pre-Sort:")
+    print(the_list)
+
     # calls the function and tracks time
     time_before = time.time()
     nano_time_before = time.time_ns()
@@ -131,7 +130,7 @@ def main() -> None:
     nano_time_elapsed = nano_time_after - nano_time_before
 
     # print post-sort list and time
-    print('Post-Sort:')
+    print("Post-Sort:")
     print(the_list)
     print(f"Time Elapsed in Seconds: {time_elapsed}")
     print(f"Time Elapsed in Nanoseconds: {nano_time_elapsed}")

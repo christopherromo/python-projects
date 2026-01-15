@@ -7,7 +7,6 @@ Author: Christopher Romo
 Created: 2024-02-20
 """
 
-
 import numpy
 
 
@@ -15,11 +14,11 @@ def main() -> None:
     """Program entry point."""
 
     # import the message to be encoded
-    input_file = open('secret_message.txt', 'r')
+    input_file = open("secret_message.txt", "r")
     the_message = input_file.readline()
 
     input_file.close()
-    
+
     # create a list of the unicode numbers
     the_list = list()
 
@@ -35,31 +34,33 @@ def main() -> None:
 
     # create the matrix and shape it
     the_matrix = numpy.array(the_list)
-    the_matrix = numpy.reshape(the_matrix, (4, num_cols), order = 'F')
+    the_matrix = numpy.reshape(the_matrix, (4, num_cols), order="F")
 
     # create the encoding matrix
-    encoding_matrix = numpy.array([[1,-1,-1,1], [2,-3,-5,4], [-2,-1,-2,2], [3,-3,-1,2]])
+    encoding_matrix = numpy.array(
+        [[1, -1, -1, 1], [2, -3, -5, 4], [-2, -1, -2, 2], [3, -3, -1, 2]]
+    )
 
     # multiply the two matrices to receive encoded matrix
     encoded_matrix = numpy.dot(encoding_matrix, the_matrix)
 
     # print the matrices to the console
-    print('Encoding Matrix:')
+    print("Encoding Matrix:")
     print(encoding_matrix)
     print()
-    print('Plaintext Matrix:')
+    print("Plaintext Matrix:")
     print(the_matrix)
     print()
-    print('Encoded Matrix:')
+    print("Encoded Matrix:")
     print(encoded_matrix)
 
     # output the matrix to a file
-    output_file = open('encoded_matrix.txt', 'w')
+    output_file = open("encoded_matrix.txt", "w")
 
     for i in range(0, 4):
         for j in range(0, num_cols):
             output_file.write(str(encoded_matrix[i][j]))
-            output_file.write(' ')
+            output_file.write(" ")
 
     output_file.close()
 

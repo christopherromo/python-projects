@@ -6,14 +6,13 @@ Numpy and array example.
 Author: Christopher Romo
 """
 
-
 import numpy as np
 
 
 def main() -> None:
     """Program entry point."""
 
-    dimension = int(input('Enter dimension size: '))
+    dimension = int(input("Enter dimension size: "))
 
     # create an array of zeros
     checker_board = np.zeros((dimension, dimension))

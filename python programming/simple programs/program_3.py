@@ -19,7 +19,7 @@ class Dog:
     def speak(self, sound: str) -> str:
         """
         Returns a string representing the sound the dog makes.
-        
+
         Args:
             sound (str): The sound the dog makes.
 
@@ -42,10 +42,11 @@ class GoldenRetriever(Dog):
     def speak(self, sound: str = "Bark") -> str:
         """
         Returns a string representing the sound the golden retriever makes.
-        
+
         Args:
-            sound (str): The sound the golden retriever makes (default is "Bark").
-        
+            sound (str): The sound the golden retriever makes (default is 
+            "Bark").
+
         Returns:
             str: A string in the format "<name> says <sound>."
         """
@@ -57,8 +58,8 @@ def main() -> None:
     """Program entry point."""
 
     # demonstration of the Dog and GoldenRetriever classes
-    max = GoldenRetriever('Max', 9)
-    
+    max = GoldenRetriever("Max", 9)
+
     # print details and sounds
     print(max.speak())
     print(max.speak("Hello"))

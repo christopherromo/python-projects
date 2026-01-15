@@ -6,13 +6,14 @@ Mathplotlib example (sin wave).
 Author: Christopher Romo
 """
 
-
 import numpy as np
 import matplotlib.pyplot as plt
 
 
 def main() -> None:
     """Program entry point."""
+
+    # from in-class example
 
     # generate x values from 0 to 2 pi
     x_values = np.linspace(0, 2 * np.pi)

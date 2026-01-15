@@ -6,14 +6,13 @@ Threading and time example.
 Author: Christopher Romo
 """
 
-
 import threading, time
 
 
 def sum(num_one: int, num_two: int, num_three: int) -> None:
     """
     Sums three numbers after a delay.
-    
+
     Args:
         num_one (int): The first number.
         num_two (int): The second number.
@@ -29,13 +28,13 @@ def sum(num_one: int, num_two: int, num_three: int) -> None:
 def main() -> None:
     """Program entry point."""
 
-    print('Start of main')
+    print("Start of main")
 
     # create and start the thread
-    function_thread = threading.Thread(target=sum, args=[1,2,3])
+    function_thread = threading.Thread(target=sum, args=[1, 2, 3])
     function_thread.start()
 
-    print('End of main')
+    print("End of main")
 
 
 if __name__ == "__main__":

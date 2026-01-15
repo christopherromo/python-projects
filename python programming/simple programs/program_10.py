@@ -6,13 +6,14 @@ Mathplotlib example (scatter plot).
 Author: Christopher Romo
 """
 
-
 import numpy as np
 import matplotlib.pyplot as plt
 
 
 def main() -> None:
     """Program entry point."""
+
+    # from in-class example
 
     n = 1500
 
@@ -21,16 +22,16 @@ def main() -> None:
     points_color = np.ones(n)
 
     # determine colors based on quadrants
-    set1 = np.where(x_values[:,0] >= 0)
-    set2 = np.where(x_values[:,1] >= 0)
+    set1 = np.where(x_values[:, 0] >= 0)
+    set2 = np.where(x_values[:, 1] >= 0)
     points_color[np.intersect1d(set1, set2)] = 0
 
-    set1 = np.where(x_values[:,0] < 0)
-    set2 = np.where(x_values[:,1] < 0)
+    set1 = np.where(x_values[:, 0] < 0)
+    set2 = np.where(x_values[:, 1] < 0)
     points_color[np.intersect1d(set1, set2)] = 0
 
     # plot the scatter plot
-    plt.scatter(x_values[:,0], x_values[:,1], c = points_color)
+    plt.scatter(x_values[:, 0], x_values[:, 1], c=points_color)
     plt.show()
 
 

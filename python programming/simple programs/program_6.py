@@ -6,7 +6,6 @@ Datetime and time example.
 Author: Christopher Romo
 """
 
-
 import datetime, time
 
 
@@ -20,7 +19,7 @@ def main() -> None:
         time.sleep(10)
 
     # print message when the date is reached
-    print('Done.')
+    print("Done.")
 
 
 if __name__ == "__main__":

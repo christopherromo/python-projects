@@ -22,8 +22,8 @@ def main() -> None:
     """Program entry point."""
 
     # demonstration of the Car class
-    car_one = Car('blue', 20000)
-    car_two = Car('red', 30000)
+    car_one = Car("blue", 20000)
+    car_two = Car("red", 30000)
 
     # print the car details
     print(car_one)

@@ -17,9 +17,9 @@ class MultipleOfFive:
         self.minimum = value
         self.maximum = maximum
 
-    def __iter__(self) -> 'MultipleOfFive':
+    def __iter__(self) -> "MultipleOfFive":
         return self
-    
+
     def __next__(self) -> int:
         if self.minimum < self.maximum:
             value = self.minimum
@@ -33,7 +33,7 @@ def main() -> None:
     """Program entry point."""
 
     # demonstration of the MultipleOfFive iterator
-    the_list = MultipleOfFive(1,51)
+    the_list = MultipleOfFive(1, 51)
 
     # print the multiples of five
     for element in the_list:

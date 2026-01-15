@@ -20,7 +20,7 @@ def printTriangle(size: int) -> None:
 
     # build the triangle line by line
     for i in range(size):
-        print('*' * base)
+        print("*" * base)
         base = base - 1
 
 
@@ -29,10 +29,10 @@ def main() -> None:
 
     # get user input for triangle size
     while True:
-        size = int(input('Please, enter the value of n: '))
+        size = int(input("Please, enter the value of n: "))
 
         if size < 1:
-            print('Invalid Input')
+            print("Invalid Input")
         else:
             printTriangle(size)
             break
