@@ -364,7 +364,7 @@ def main() -> None:
 
     # task 8
 
-    # Use the `next_branch_outcome_random` method to generate branch outcomes.
+    # Use the next_branch_outcome_random method to generate branch outcomes.
     # Use the previously implemented methods to compute a prediction rate.
 
     # create a branch predictor object and start a counter

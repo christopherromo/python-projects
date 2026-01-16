@@ -14,7 +14,7 @@ def main() -> None:
 
     the_date = datetime.datetime(2026, 1, 5, 0, 0, 0)
 
-    # wait until the specified date (Midnight, January 5, 2026)
+    # wait until the specified date (midnight, January 5, 2026)
     while datetime.datetime.now() < the_date:
         time.sleep(10)
 
