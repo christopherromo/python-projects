@@ -1,15 +1,15 @@
 """
-homework_2.1.py
+project_2.1.py
 
-Replaces the second half of a given string with its uppercase version.
+replaces the second half of a given string with its uppercase version.
 
-Author: Christopher Romo
-Created: 2023-07-05
+author: christopher romo
+created: 2023-07-05
 """
 
 
 def main() -> None:
-    """Program entry point."""
+    """replaces the second half of a given string with its uppercase version."""
 
     counter_one = 0
     counter_two = 0

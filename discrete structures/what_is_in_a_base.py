@@ -1,19 +1,19 @@
 """
 what_is_in_a_base.py
 
-Exercises involving number bases.
+exercises involving number bases.
 
-Author: Christopher Romo
+author: christopher romo
 """
 
 
 def expect_equal(a: any, b: any) -> None:
     """
-    Compares two values and prints a message if they are not equal.
+    compares two values and prints a message if they are not equal.
 
-    Args:
-        a (any): The first value.
-        b (any): The second value.
+    args:
+        a (any): the first value.
+        b (any): the second value.
     """
 
     if a != b:
@@ -22,14 +22,14 @@ def expect_equal(a: any, b: any) -> None:
 
 def string_to_int(number: str, base: str) -> int:
     """
-    Converts a string representation of a number in a given base to an integer.
+    converts a string representation of a number in a given base to an integer.
 
-    Args:
-        number (str): The string representation of the number.
-        base (str): The base string representing the digits of the base.
+    args:
+        number (str): the string representation of the number.
+        base (str): the base string representing the digits of the base.
 
-    Returns:
-        int: The integer representation of the number.
+    returns:
+        int: the integer representation of the number.
     """
 
     # initialize variables
@@ -70,14 +70,14 @@ def string_to_int(number: str, base: str) -> int:
 
 def int_to_string(integer: int, base: str) -> str:
     """
-    Converts an integer to its string representation in a given base.
+    converts an integer to its string representation in a given base.
 
-    Args:
-        integer (int): The integer to convert.
-        base (str): The base string representing the digits of the base.
+    args:
+        integer (int): the integer to convert.
+        base (str): the base string representing the digits of the base.
 
-    Returns:
-        str: The string representation of the number in the given base.
+    returns:
+        str: the string representation of the number in the given base.
     """
 
     # initialize variables
@@ -114,15 +114,15 @@ def int_to_string(integer: int, base: str) -> str:
 
 def add(a: str, b: str, base: str) -> str:
     """
-    Adds two numbers represented as strings in a given base.
+    adds two numbers represented as strings in a given base.
 
-    Args:
-        a (str): The first number as a string.
-        b (str): The second number as a string.
-        base (str): The base string representing the digits of the base.
+    args:
+        a (str): the first number as a string.
+        b (str): the second number as a string.
+        base (str): the base string representing the digits of the base.
 
-    Returns:
-        str: The sum of the two numbers as a string in the given base.
+    returns:
+        str: the sum of the two numbers as a string in the given base.
     """
 
     # turn both strings into integers
@@ -140,7 +140,7 @@ def add(a: str, b: str, base: str) -> str:
 
 
 def main() -> None:
-    """Program entry point."""
+    """exercises involving number bases."""
 
     # originally a jupyter notebook exercise
 

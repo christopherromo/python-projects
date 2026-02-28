@@ -1,9 +1,9 @@
 """
 program_9.py
 
-Mathplotlib example (sin wave).
+matplotlib example (sin wave).
 
-Author: Christopher Romo
+author: christopher romo
 """
 
 import numpy as np
@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 
 
 def main() -> None:
-    """Program entry point."""
+    """matplotlib example (sin wave)."""
 
     # from in-class example
 

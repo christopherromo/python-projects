@@ -1,10 +1,10 @@
 """
 merge_sort.py
 
-Performs merge sort on a list of numbers.
+performs merge sort on a list of numbers.
 
-Author: Christopher Romo
-Created: 2024-02-08
+author: christopher romo
+created: 2024-02-08
 """
 
 import time
@@ -12,13 +12,13 @@ import time
 
 def merge_sort(a_list: list) -> list:
     """
-    Performs merge sort on a list of numbers.
+    performs merge sort on a list of numbers.
 
-    Args:
-        a_list (list): The list of numbers to be sorted.
+    args:
+        a_list (list): the list of numbers to be sorted.
 
-    Returns:
-        list: The sorted list of numbers.
+    returns:
+        list: the sorted list of numbers.
     """
 
     a_list_len = len(a_list)
@@ -97,7 +97,7 @@ def merge_sort(a_list: list) -> list:
 
 
 def main() -> None:
-    """Program entry point."""
+    """calculates the time it takes to sort a list of numbers."""
 
     # read in the list from a file and grab the length
     input_file = open("sort_list3_input.txt", "r")

@@ -1,22 +1,22 @@
 """
 matrix_generation.py
 
-Generates matrices and writes them to text files.
+generates matrices and writes them to text files.
 
-Author: Christopher Romo
-Created: 2024-02-01
+author: christopher romo
+created: 2024-02-01
 """
 
 
 def make_matrix(matrix: list, num_row: int, num_col: int) -> None:
     """
-    Initializes a 2D list (matrix) with given number of rows and columns filled
+    initializes a 2D list (matrix) with given number of rows and columns filled
     with zeros.
 
-    Args:
-        matrix (list): The 2D list to be initialized.
-        num_row (int): The number of rows in the matrix.
-        num_col (int): The number of columns in the matrix.
+    args:
+        matrix (list): the 2D list to be initialized.
+        num_row (int): the number of rows in the matrix.
+        num_col (int): the number of columns in the matrix.
     """
 
     for i in range(0, num_row):
@@ -31,15 +31,15 @@ def fill_matrix(
     file_name: str, num_row: int, num_col: int, total: int, total_add: int, flip: bool
 ) -> None:
     """
-    Fills a matrix with values and writes it to a file.
+    fills a matrix with values and writes it to a file.
 
-    Args:
-        file_name (str): The name of the output file.
-        num_row (int): The number of rows in the matrix.
-        num_col (int): The number of columns in the matrix.
-        total (int): The starting value to fill the matrix.
-        total_add (int): The value to add for each subsequent element.
-        flip (bool): If True, fills the matrix column-wise; if False, fills
+    args:
+        file_name (str): the name of the output file.
+        num_row (int): the number of rows in the matrix.
+        num_col (int): the number of columns in the matrix.
+        total (int): the starting value to fill the matrix.
+        total_add (int): the value to add for each subsequent element.
+        flip (bool): if true, fills the matrix column-wise; if false, fills
         row-wise.
     """
 
@@ -74,7 +74,7 @@ def fill_matrix(
 
 
 def main() -> None:
-    """Program entry point."""
+    """generates matrices and writes them to text files."""
 
     # fill four matrices with different parameters
     fill_matrix("matrix_1.txt", 4, 11, 0, 1, False)

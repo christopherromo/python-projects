@@ -1,15 +1,15 @@
 """
-homework_1.2.py
+project_1.2.py
 
-Checks if a list contains three consecutive identical numbers.
+checks if a list contains three consecutive identical numbers.
 
-Author: Christopher Romo
-Created: 2023-06-21
+author: christopher romo
+created: 2023-06-21
 """
 
 
 def main() -> None:
-    """Program entry point."""
+    """checks if a list contains three consecutive identical numbers."""
 
     # assumes input is in the form of a list of integers: [1,2,3]
     the_original_string = input("Input: ")  # get user input

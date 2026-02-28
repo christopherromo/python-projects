@@ -1,15 +1,15 @@
 """
-homework_1.3.py
+project_1.3.py
 
-Prints all characters that appear more than once in a given string.
+prints all characters that appear more than once in a given string.
 
-Author: Christopher Romo
-Created: 2023-06-21
+author: christopher romo
+created: 2023-06-21
 """
 
 
 def main() -> None:
-    """Program entry point."""
+    """prints all characters that appear more than once in a given string."""
 
     # assumes input is a string
     the_original_string = input("Input: ")

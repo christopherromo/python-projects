@@ -1,15 +1,15 @@
 """
-homework_2.3.py
+project_2.3.py
 
-Defines a BankAccount class with deposit and withdrawal methods.
+defines a BankAccount class with deposit and withdrawal methods.
 
-Author: Christopher Romo
-Created: 2023-07-05
+author: christopher romo
+created: 2023-07-05
 """
 
 
 class BankAccount:
-    """A simple bank account class."""
+    """the BankAccount class creates a bank account object."""
 
     account_counter = 0
 
@@ -20,10 +20,10 @@ class BankAccount:
 
     def deposit(self, deposit_amount: int) -> None:
         """
-        Deposits the given amount into the account.
+        deposits the given amount into the account.
 
-        Args:
-            deposit_amount (int): The amount to deposit.
+        args:
+            deposit_amount (int): the amount to deposit.
         """
 
         self.balance += deposit_amount
@@ -33,10 +33,10 @@ class BankAccount:
 
     def withdrawal(self, withdrawal_amount: int) -> None:
         """
-        Withdraws the given amount from the account if sufficient funds exist.
+        withdraws the given amount from the account if sufficient funds exist.
 
-        Args:
-            withdrawal_amount (int): The amount to withdraw.
+        args:
+            withdrawal_amount (int): the amount to withdraw.
         """
 
         if self.balance >= withdrawal_amount:
@@ -52,7 +52,7 @@ class BankAccount:
 
 
 def main() -> None:
-    """Program entry point."""
+    """shows a demonstration of the BankAccount class."""
 
     # demonstration of the BankAccount class
     taylors_account = BankAccount()

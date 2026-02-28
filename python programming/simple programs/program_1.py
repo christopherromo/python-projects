@@ -1,20 +1,20 @@
 """
 program_1.py
 
-Printing and dictionary example.
+printing and dictionary example.
 
-Author: Christopher Romo
+author: christopher romo
 """
 
 
 def print_picnic(items_dict: dict, left_width: int, right_width: int) -> None:
     """
-    Prints a formatted picnic items list.
+    prints a formatted picnic items list.
 
-    Args:
-        items_dict (dict): A dictionary of picnic items and their quantities.
-        left_width (int): The width for the left column.
-        right_width (int): The width for the right column.
+    args:
+        items_dict (dict): a dictionary of picnic items and their quantities.
+        left_width (int): the width for the left column.
+        right_width (int): the width for the right column.
     """
 
     print("PICNIC ITEMS".center(left_width + right_width, "-"))
@@ -25,7 +25,7 @@ def print_picnic(items_dict: dict, left_width: int, right_width: int) -> None:
 
 
 def main() -> None:
-    """Program entry point."""
+    """printing and dictionary example."""
 
     # printing examples
     print("hello")

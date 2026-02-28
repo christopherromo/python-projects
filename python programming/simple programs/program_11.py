@@ -1,16 +1,16 @@
 """
 program_11.py
 
-Regex example.
+regex example.
 
-Author: Christopher Romo
+author: christopher romo
 """
 
 import re
 
 
 def main() -> None:
-    """Program entry point."""
+    """regex example."""
 
     # compile a regex to find a pattern of three digits, a hyphen, and three digits
     num_regex = re.compile(r"\d\d\d-\d\d\d")

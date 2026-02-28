@@ -1,10 +1,10 @@
 """
 electrical_circuits.py
 
-Solves for the currents in a given electrical circuit using Kirchhoff's laws.
+solves for the currents in a given electrical circuit using Kirchhoff's laws.
 
-Author: Christopher Romo
-Created: 2024-03-22
+author: christopher romo
+created: 2024-03-22
 """
 
 import numpy
@@ -12,7 +12,7 @@ import sympy
 
 
 def main() -> None:
-    """Program entry point."""
+    """solves for the currents in a given electrical circuit using Kirchhoff's laws."""
 
     # the plan
 

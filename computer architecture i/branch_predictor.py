@@ -1,11 +1,11 @@
 """
 branch_predictor.py
 
-Implements various branch predictors including one-bit, two-bit, and n-bit
+implements various branch predictors including one-bit, two-bit, and n-bit
 predictors.
 
-Author: Christopher Romo
-Created: 2024-10-13
+author: christopher romo
+created: 2024-10-13
 """
 
 from random import paretovariate
@@ -14,10 +14,10 @@ from random import random
 
 def next_branch_outcome_loop() -> bool:
     """
-    Generates the next branch outcome in a looping pattern.
+    generates the next branch outcome in a looping pattern.
 
-    Returns:
-        bool: The next branch outcome (True for taken, False for not taken).
+    returns:
+        bool: the next branch outcome (true for taken, false for not taken).
     """
 
     alpha = 2
@@ -28,10 +28,10 @@ def next_branch_outcome_loop() -> bool:
 
 def next_branch_outcome_random() -> bool:
     """
-    Generates the next branch outcome randomly.
+    generates the next branch outcome randomly.
 
-    Returns:
-        bool: The next branch outcome (True for taken, False for not taken).
+    returns:
+        bool: the next branch outcome (true for taken, false for not taken).
     """
 
     outcome = random()
@@ -40,40 +40,40 @@ def next_branch_outcome_random() -> bool:
 
 
 class Predictor:
-    """A base class for branch predictors."""
+    """a base class for branch predictors."""
 
     def __init__(self):
         self.state = 0
 
     def next_predict(self):
         """
-        Use this method to return the prediction based off of the current
+        use this method to return the prediction based off of the current
         state.
         """
 
     def incorrect_predict(self):
         """
-        Use this method to set the next state if an incorrect predict
+        use this method to set the next state if an incorrect predict
         occurred. (self.state = next_state)
         """
 
     def correct_predict(self):
         """
-        Use this method to set the next state if an incorrect predict
+        use this method to set the next state if a correct predict
         occurred. (self.state = next_state)
         """
 
 
 class OneBitPredictor(Predictor):
-    """A one-bit branch predictor."""
+    """the OneBitPredictor creates a one bit branch predictor."""
 
     def next_predict(self) -> int:
         """
-        If the state is 0, predict not taken (0). If the state is 1, predict
+        if the state is 0, predict not taken (0). if the state is 1, predict
         taken (1).
 
-        Returns:
-            int: The predicted branch outcome (0 for not taken, 1 for taken).
+        returns:
+            int: the predicted branch outcome (0 for not taken, 1 for taken).
         """
 
         if self.state == 0:
@@ -82,7 +82,7 @@ class OneBitPredictor(Predictor):
             return 1
 
     def incorrect_predict(self) -> None:
-        """Updates the current state opposite the prediction."""
+        """updates the current state opposite the prediction."""
 
         if self.state == 0:
             self.state = 1
@@ -90,7 +90,7 @@ class OneBitPredictor(Predictor):
             self.state = 0
 
     def correct_predict(self) -> None:
-        """Updates the current state based on the prediction."""
+        """updates the current state based on the prediction."""
 
         if self.state == 0:
             self.state = 0
@@ -99,15 +99,15 @@ class OneBitPredictor(Predictor):
 
 
 class TwoBitPredictor(Predictor):
-    """A two-bit branch predictor."""
+    """the TwoBitPredictor creates a two bit branch predictor."""
 
     def next_predict(self) -> int:
         """
-        If the state is 0 or 1, predict not taken (0). If the state is 2 or 3,
+        if the state is 0 or 1, predict not taken (0). if the state is 2 or 3,
         predict taken (1).
 
-        Returns:
-            int: The predicted branch outcome (0 for not taken, 1 for taken).
+        returns:
+            int: the predicted branch outcome (0 for not taken, 1 for taken).
         """
 
         if self.state == 0:
@@ -120,7 +120,7 @@ class TwoBitPredictor(Predictor):
             return 1
 
     def incorrect_predict(self) -> None:
-        """Updates the current state opposite the prediction."""
+        """updates the current state opposite the prediction."""
 
         if self.state == 0:
             self.state = 1
@@ -132,7 +132,7 @@ class TwoBitPredictor(Predictor):
             self.state = 2
 
     def correct_predict(self) -> None:
-        """Updates the current state based on the prediction."""
+        """updates the current state based on the prediction."""
 
         if self.state == 0:
             self.state = 0
@@ -145,7 +145,7 @@ class TwoBitPredictor(Predictor):
 
 
 class NBitPredictor(Predictor):
-    """An n-bit branch predictor."""
+    """the NBitPredictor creates an n bit branch predictor."""
 
     def __init__(self, n_bits):
         self.n_bits = n_bits
@@ -153,10 +153,10 @@ class NBitPredictor(Predictor):
 
     def next_predict(self) -> int:
         """
-        Predicts the next branch outcome based on the current state.
+        predicts the next branch outcome based on the current state.
 
-        Returns:
-            int: The predicted branch outcome (0 for not taken, 1 for taken).
+        returns:
+            int: the predicted branch outcome (0 for not taken, 1 for taken).
         """
 
         # get the total number of nodes and find the halfway point
@@ -170,7 +170,7 @@ class NBitPredictor(Predictor):
             return 1
 
     def incorrect_predict(self) -> None:
-        """Updates the current state opposite the prediction."""
+        """updates the current state opposite the prediction."""
 
         node_num = 2**self.n_bits
         half_point = node_num // 2
@@ -181,7 +181,7 @@ class NBitPredictor(Predictor):
             self.state = self.state - 1
 
     def correct_predict(self) -> None:
-        """Updates the current state based on the prediction."""
+        """updates the current state based on the prediction."""
 
         node_num = 2**self.n_bits
         half_point = node_num // 2
@@ -199,7 +199,7 @@ class NBitPredictor(Predictor):
 
 
 def main() -> None:
-    """Program entry point."""
+    """implements various branch predictors including one-bit, two-bit, and n-bit predictors."""
 
     # originally a jupyter notebook exercise
 

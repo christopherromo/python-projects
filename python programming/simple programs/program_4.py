@@ -1,14 +1,14 @@
 """
 program_4.py
 
-Iterator example.
+iterator example.
 
-Author: Christopher Romo
+author: christopher romo
 """
 
 
 class MultipleOfFive:
-    """An iterator that yields multiples of five within a specified range."""
+    """an iterator that yields multiples of five within a specified range."""
 
     def __init__(self, minimum: int, maximum: int) -> None:
         for value in range(minimum, maximum):
@@ -30,7 +30,7 @@ class MultipleOfFive:
 
 
 def main() -> None:
-    """Program entry point."""
+    """iterator example."""
 
     # demonstration of the MultipleOfFive iterator
     the_list = MultipleOfFive(1, 51)

@@ -1,26 +1,26 @@
 """
 dfa.py
 
-Implements a deterministic finite automaton (DFA) that reads its configuration
+implements a deterministic finite automaton (dfa) that reads its configuration
 from a file.
 
-Author: Christopher Romo
-Created: 2025-03-14
+author: christopher romo
+created: 2025-03-14
 """
 
 
 def next_state(current_state: int, input: str, alphabet: list, states: list) -> int:
     """
-    Determines the next state based on the current state and input character.
+    determines the next state based on the current state and input character.
 
-    Args:
-        current_state (int): The current state as an integer.
-        input (str): The current input character.
-        alphabet (list): The list of characters in the DFA's alphabet.
-        states (list): The list of state transitions.
+    args:
+        current_state (int): the current state as an integer.
+        input (str): the current input character.
+        alphabet (list): the list of characters in the dfa's alphabet.
+        states (list): the list of state transitions.
 
-    Returns:
-        int: The next state as an integer.
+    returns:
+        int: the next state as an integer.
     """
 
     # find the x position in states list
@@ -38,13 +38,13 @@ def next_state(current_state: int, input: str, alphabet: list, states: list) -> 
 
 
 def main() -> None:
-    """Program entry point."""
+    """reads the dfa configuration from a file and runs the dfa on user input."""
 
-    # Input file format:
-    # Line 1: Alphabet (string of characters)
-    # Line 2: Number of states (integer)
-    # Next N Lines: State transitions (space-separated integers for each state)
-    # Last Line: Accept states (space-separated integers)
+    # input file format:
+    # line 1: alphabet (string of characters)
+    # line 2: number of states (integer)
+    # next n lines: state transitions (space-separated integers for each state)
+    # last line: accept states (space-separated integers)
 
     input_file = open("dfa_states1_input.txt", "r")
 

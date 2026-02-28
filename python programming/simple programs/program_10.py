@@ -1,9 +1,9 @@
 """
 program_10.py
 
-Mathplotlib example (scatter plot).
+matplotlib example (scatter plot).
 
-Author: Christopher Romo
+author: christopher romo
 """
 
 import numpy as np
@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 
 
 def main() -> None:
-    """Program entry point."""
+    """matplotlib example (scatter plot)."""
 
     # from in-class example
 

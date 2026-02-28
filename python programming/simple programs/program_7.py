@@ -1,16 +1,16 @@
 """
 program_7.py
 
-Openpyxl example.
+openpyxl example.
 
-Author: Christopher Romo
+author: christopher romo
 """
 
 import openpyxl
 
 
 def main() -> None:
-    """Program entry point."""
+    """openpyxl example."""
 
     # load an existing workbook and read values from it
     wb = openpyxl.load_workbook("test.xlsx")

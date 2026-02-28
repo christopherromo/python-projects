@@ -1,9 +1,9 @@
 """
 graph_representation.py
 
-Exercises on graph representations.
+exercises on graph representations.
 
-Author: Christopher Romo
+author: christopher romo
 """
 
 import networkx as nx
@@ -12,11 +12,11 @@ import matplotlib.pyplot as plt
 
 def expect_equal(a: any, b: any) -> None:
     """
-    Compares two values and prints a message if they are not equal.
+    compares two values and prints a message if they are not equal.
 
-    Args:
-        a (any): The first value.
-        b (any): The second value.
+    args:
+        a (any): the first value.
+        b (any): the second value.
     """
 
     if a != b:
@@ -25,10 +25,10 @@ def expect_equal(a: any, b: any) -> None:
 
 def check_undirected(adj_list: dict) -> None:
     """
-    Checks if the given adjacency list represents an undirected graph.
+    checks if the given adjacency list represents an undirected graph.
 
-    Args:
-        adj_list (dict): The adjacency list of the graph.
+    args:
+        adj_list (dict): the adjacency list of the graph.
     """
 
     for node in adj_list:
@@ -44,10 +44,10 @@ def check_undirected(adj_list: dict) -> None:
 
 def check_self_loops(adj_list: dict) -> None:
     """
-    Checks if the given adjacency list has any self-loops.
+    checks if the given adjacency list has any self-loops.
 
-    Args:
-        adj_list (dict): The adjacency list of the graph.
+    args:
+        adj_list (dict): the adjacency list of the graph.
     """
 
     for node in adj_list:
@@ -58,13 +58,13 @@ def check_self_loops(adj_list: dict) -> None:
 
 def list_to_dict(input_list: list) -> dict:
     """
-    Converts a list of pairs into a dictionary with sets as values.
+    converts a list of pairs into a dictionary with sets as values.
 
-    Args:
-        input_list (list): A list of pairs [(a_1,b_1),...,(a_n,b_n)].
+    args:
+        input_list (list): a list of pairs [(a_1,b_1),...,(a_n,b_n)].
 
-    Returns:
-        dict: A dictionary with keys a_1,a_2,...,a_n and values as sets
+    returns:
+        dict: a dictionary with keys a_1,a_2,...,a_n and values as sets
         {b_k such that a_k=a_i}.
     """
 
@@ -85,11 +85,11 @@ def list_to_dict(input_list: list) -> dict:
 
 def draw_graph(adj_list, actually_draw=True) -> None:
     """
-    Draws the graph represented by the given adjacency list.
+    draws the graph represented by the given adjacency list.
 
-    Args:
-        adj_list (dict): The adjacency list of the graph.
-        actually_draw (bool): Whether to actually draw the graph.
+    args:
+        adj_list (dict): the adjacency list of the graph.
+        actually_draw (bool): whether to actually draw the graph.
     """
 
     G = nx.Graph()
@@ -103,13 +103,13 @@ def draw_graph(adj_list, actually_draw=True) -> None:
 
 def edge_list_to_adj_list(edge_list: list) -> dict:
     """
-    Converts a list of edges into an adjacency list representation.
+    converts a list of edges into an adjacency list representation.
 
-    Args:
-        edge_list (list): A list of edges [(a_1,b_1),...,(a_n,b_n)].
+    args:
+        edge_list (list): a list of edges [(a_1,b_1),...,(a_n,b_n)].
 
-    Returns:
-        dict: An adjacency list representation of the graph.
+    returns:
+        dict: an adjacency list representation of the graph.
     """
 
     adj_list = {}
@@ -135,13 +135,13 @@ def edge_list_to_adj_list(edge_list: list) -> dict:
 
 def eulerian(edge_list: list) -> bool:
     """
-    Determines if the graph represented by the given edge list is Eulerian.
+    determines if the graph represented by the given edge list is eulerian.
 
-    Args:
-        edge_list (list): A list of edges [(a_1,b_1),...,(a_n,b_n)].
+    args:
+        edge_list (list): a list of edges [(a_1,b_1),...,(a_n,b_n)].
 
-    Returns:
-        bool: True if the graph is Eulerian, False otherwise.
+    returns:
+        bool: true if the graph is eulerian, false otherwise.
     """
 
     adj_list = edge_list_to_adj_list(edge_list)
@@ -169,7 +169,7 @@ def eulerian(edge_list: list) -> bool:
 
 
 def main() -> None:
-    """Program entry point."""
+    """exercises on graph representations."""
 
     # originally a jupyter notebook exercise
 

@@ -1,10 +1,10 @@
 """
 graphic_transformations.py
 
-Draws the letter 'A' and applies graphic transformations based on user input.
+draws the letter 'A' and applies graphic transformations based on user input.
 
-Author: Christopher Romo
-Created: 2024-03-19
+author: christopher romo
+created: 2024-03-19
 """
 
 import turtle
@@ -14,14 +14,14 @@ import math
 
 def format_matrix(the_array: numpy.array) -> numpy.array:
     """
-    Formats the input array to reorder the columns for drawing the letter 'A'.
+    formats the input array to reorder the columns for drawing the letter 'A'.
 
-    Args:
-        the_array (numpy.array): A 3xN array where each column represents a
+    args:
+        the_array (numpy.array): a 3xN array where each column represents a
         point (x, y, 1).
 
-    Returns:
-        numpy.array: A reformatted 3xN array with columns ordered for drawing.
+    returns:
+        numpy.array: a reformatted 3xN array with columns ordered for drawing.
     """
 
     # use placeholders for swapping the columns
@@ -45,11 +45,11 @@ def format_matrix(the_array: numpy.array) -> numpy.array:
 
 def draw_a(the_array: numpy.array) -> None:
     """
-    Draws the letter 'A' based on the provided 2D array of points with columns
+    draws the letter 'A' based on the provided 2D array of points with columns
     formatted in the order: 1, 4, 5, 3, 2.
 
-    Args:
-        the_array (numpy.array): A 3xN array where each column represents a
+    args:
+        the_array (numpy.array): a 3xN array where each column represents a
         point (x, y, 1).
     """
 
@@ -83,7 +83,7 @@ def draw_a(the_array: numpy.array) -> None:
 
 
 def main() -> None:
-    """Program entry point."""
+    """draws the letter 'A' and applies graphic transformations based on user input."""
 
     # import the information
     input_file = open("graphic_transformation1_input.txt", "r")

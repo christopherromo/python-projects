@@ -1,17 +1,17 @@
 """
 matrix_decryption.py
 
-Decodes a secret message encoded with matrix multiplication.
+decodes a secret message encoded with matrix multiplication.
 
-Author: Christopher Romo
-Created: 2024-02-22
+author: christopher romo
+created: 2024-02-22
 """
 
 import numpy
 
 
 def main() -> None:
-    """Program entry point."""
+    """decodes a secret message encoded with matrix multiplication."""
 
     # import the encoded numbers
     input_file = open("encoded_matrix.txt", "r")

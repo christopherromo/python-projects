@@ -1,9 +1,9 @@
 """
 exponential_growth.py
 
-Exercises involving exponential growth and timing functions.
+exercises involving exponential growth and timing functions.
 
-Author: Christopher Romo
+author: christopher romo
 """
 
 import time
@@ -11,11 +11,11 @@ import time
 
 def expect_equal(a: any, b: any) -> None:
     """
-    Compares two values and prints a message if they are not equal.
+    compares two values and prints a message if they are not equal.
 
-    Args:
-        a (any): The first value.
-        b (any): The second value.
+    args:
+        a (any): the first value.
+        b (any): the second value.
     """
 
     if a != b:
@@ -24,14 +24,14 @@ def expect_equal(a: any, b: any) -> None:
 
 def a_to_the_b(a: int, b: int) -> int:
     """
-    Counts to a^b using a loop.
+    counts to a^b using a loop.
 
-    Args:
-        a (int): The base.
-        b (int): The exponent.
+    args:
+        a (int): the base.
+        b (int): the exponent.
 
-    Returns:
-        int: The count up to a^b.
+    returns:
+        int: the count up to a^b.
     """
 
     count = 0
@@ -44,14 +44,14 @@ def a_to_the_b(a: int, b: int) -> int:
 
 def time_the_function(a: int, b: int) -> float:
     """
-    Times how long it takes to run a_to_the_b(a,b).
+    times how long it takes to run a_to_the_b(a,b).
 
-    Args:
-        a (int): The base.
-        b (int): The exponent.
+    args:
+        a (int): the base.
+        b (int): the exponent.
 
-    Returns:
-        float: The time taken to run a_to_the_b(a,b).
+    returns:
+        float: the time taken to run a_to_the_b(a,b).
     """
 
     time_before = time.time()
@@ -64,7 +64,7 @@ def time_the_function(a: int, b: int) -> float:
 
 
 def main() -> None:
-    """Program entry point."""
+    """exercises involving exponential growth and timing functions."""
 
     # originally a jupyter notebook exercise
 

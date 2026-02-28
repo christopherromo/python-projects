@@ -1,18 +1,19 @@
 """
 input_output_model.py
 
-Implements the input-output model to find the total output required to satisfy
+implements the input-output model to find the total output required to satisfy
 external demand.
 
-Author: Christopher Romo
-Created: 2024-04-30
+author: christopher romo
+created: 2024-04-30
 """
 
 import numpy
 
 
 def main() -> None:
-    """Program entry point."""
+    """implements the input-output model to find the total output required to satisfy
+    external demand."""
 
     # read in the information for both matrices
     input_file_1 = open("d_matrix_input.txt", "r")

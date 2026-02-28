@@ -1,15 +1,15 @@
 """
 matrix_addition.py
 
-Adds two matrices selected by the user and outputs the result to a file.
+adds two matrices selected by the user and outputs the result to a file.
 
-Author: Christopher Romo
-Created: 2024-02-01
+author: christopher romo
+created: 2024-02-01
 """
 
 
 def main() -> None:
-    """Program entry point."""
+    """adds two matrices selected by the user and outputs the result to a file."""
 
     mat1_selected = False
     mat2_selected = False

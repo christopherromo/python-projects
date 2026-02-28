@@ -1,17 +1,17 @@
 """
 matrix_encryption.py
 
-Encodes a secret message using matrix multiplication.
+encodes a secret message using matrix multiplication.
 
-Author: Christopher Romo
-Created: 2024-02-20
+author: christopher romo
+created: 2024-02-20
 """
 
 import numpy
 
 
 def main() -> None:
-    """Program entry point."""
+    """encodes a secret message using matrix multiplication."""
 
     # import the message to be encoded
     input_file = open("secret_message.txt", "r")

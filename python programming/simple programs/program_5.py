@@ -1,9 +1,9 @@
 """
 program_5.py
 
-Threading and time example.
+threading and time example.
 
-Author: Christopher Romo
+author: christopher romo
 """
 
 import threading, time
@@ -11,12 +11,12 @@ import threading, time
 
 def sum(num_one: int, num_two: int, num_three: int) -> None:
     """
-    Sums three numbers after a delay.
+    sums three numbers after a delay.
 
-    Args:
-        num_one (int): The first number.
-        num_two (int): The second number.
-        num_three (int): The third number.
+    args:
+        num_one (int): the first number.
+        num_two (int): the second number.
+        num_three (int): the third number.
     """
 
     # wait for 5 seconds before summing and printing the result
@@ -26,7 +26,7 @@ def sum(num_one: int, num_two: int, num_three: int) -> None:
 
 
 def main() -> None:
-    """Program entry point."""
+    """threading and time example."""
 
     print("Start of main")
 

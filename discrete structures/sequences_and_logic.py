@@ -1,21 +1,21 @@
 """
 sequences_and_logic.py
 
-Exercises involving sequences and propositional logic.
+exercises involving sequences and propositional logic.
 
-Author: Christopher Romo
+author: christopher romo
 """
 
 
 def closed_pie(n: int) -> float:
     """
-    Returns the maximum number of pieces we could get with n cuts.
+    returns the maximum number of pieces we could get with n cuts.
 
-    Args:
-        n (int): The number of cuts.
+    args:
+        n (int): the number of cuts.
 
-    Returns:
-        float: The maximum number of pieces.
+    returns:
+        float: the maximum number of pieces.
     """
 
     pie_pieces = ((n**2) + n + 2) / 2
@@ -24,14 +24,14 @@ def closed_pie(n: int) -> float:
 
 def recursive_pie(n: int) -> float:
     """
-    Returns the maximum number of pieces we could get with n cuts using
+    returns the maximum number of pieces we could get with n cuts using
     recursion.
 
-    Args:
-        n (int): The number of cuts.
+    args:
+        n (int): the number of cuts.
 
-    Returns:
-        float: The maximum number of pieces.
+    returns:
+        float: the maximum number of pieces.
     """
 
     if n == 1:
@@ -42,16 +42,16 @@ def recursive_pie(n: int) -> float:
 
 def a_wild_function_appears(p: bool, q: bool, r: bool, s: bool) -> bool:
     """
-    Analyzes the given propositional logic.
+    analyzes the given propositional logic.
 
-    Args:
-        p (bool): Proposition p.
-        q (bool): Proposition q.
-        r (bool): Proposition r.
-        s (bool): Proposition s.
+    args:
+        p (bool): proposition p.
+        q (bool): proposition q.
+        r (bool): proposition r.
+        s (bool): proposition s.
 
-    Returns:
-        bool: The result of the logical analysis.
+    returns:
+        bool: the result of the logical analysis.
     """
 
     if not s and not r:
@@ -69,16 +69,16 @@ def a_wild_function_appears(p: bool, q: bool, r: bool, s: bool) -> bool:
 
 def a_calm_function_emerges(p: bool, q: bool, r: bool, s: bool) -> bool:
     """
-    Analyzes the given propositional logic.
+    analyzes the given propositional logic.
 
-    Args:
-        p (bool): Proposition p.
-        q (bool): Proposition q.
-        r (bool): Proposition r.
-        s (bool): Proposition s.
+    args:
+        p (bool): proposition p.
+        q (bool): proposition q.
+        r (bool): proposition r.
+        s (bool): proposition s.
 
-    Returns:
-        bool: The result of the logical analysis.
+    returns:
+        bool: the result of the logical analysis.
     """
 
     if not (s or r):
@@ -92,7 +92,7 @@ def a_calm_function_emerges(p: bool, q: bool, r: bool, s: bool) -> bool:
 
 
 def main() -> None:
-    """Program entry point."""
+    """exercises on sequences and propositional logic."""
 
     # originally a jupyter notebook exercise
 

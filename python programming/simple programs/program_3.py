@@ -1,14 +1,14 @@
 """
 program_3.py
 
-Inheritance and default parameter example.
+inheritance and default parameter example.
 
-Author: Christopher Romo
+author: christopher romo
 """
 
 
 class Dog:
-    """A simple Dog class."""
+    """the Dog class creates a dog object."""
 
     species = "Canis familiaris"
 
@@ -18,13 +18,13 @@ class Dog:
 
     def speak(self, sound: str) -> str:
         """
-        Returns a string representing the sound the dog makes.
+        returns a string representing the sound the dog makes.
 
-        Args:
-            sound (str): The sound the dog makes.
+        args:
+            sound (str): the sound the dog makes.
 
-        Returns:
-            str: A string in the format "<name> says <sound>."
+        returns:
+            str: a string in the format "<name> says <sound>."
         """
 
         return f"{self.name} says {sound}."
@@ -34,28 +34,28 @@ class Dog:
 
 
 class GoldenRetriever(Dog):
-    """A Golden Retriever class that inherits from Dog."""
+    """the GoldenRetriever class creates a golden retriever dog object."""
 
     def __init__(self, name: str, age: int) -> None:
         super().__init__(name, age)
 
     def speak(self, sound: str = "Bark") -> str:
         """
-        Returns a string representing the sound the golden retriever makes.
+        returns a string representing the sound the golden retriever makes.
 
-        Args:
-            sound (str): The sound the golden retriever makes (default is
+        args:
+            sound (str): the sound the golden retriever makes (default is
             "Bark").
 
-        Returns:
-            str: A string in the format "<name> says <sound>."
+        returns:
+            str: a string in the format "<name> says <sound>."
         """
 
         return f"{self.name} says {sound}."
 
 
 def main() -> None:
-    """Program entry point."""
+    """inheritance and default parameter example."""
 
     # demonstration of the Dog and GoldenRetriever classes
     max = GoldenRetriever("Max", 9)

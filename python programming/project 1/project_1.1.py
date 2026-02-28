@@ -1,19 +1,19 @@
 """
-homework_1.1.py
+project_1.1.py
 
-Prints a right triangle of asterisks.
+prints a right triangle of asterisks.
 
-Author: Christopher Romo
-Created: 2023-06-21
+author: christopher romo
+created: 2023-06-21
 """
 
 
 def printTriangle(size: int) -> None:
     """
-    Prints a right triangle of asterisks of given size.
+    prints a right triangle of asterisks of given size.
 
-    Args:
-        size (int): The size of the triangle.
+    args:
+        size (int): the size of the triangle.
     """
 
     base = size
@@ -25,7 +25,7 @@ def printTriangle(size: int) -> None:
 
 
 def main() -> None:
-    """Program entry point."""
+    """prints a right triangle of asterisks."""
 
     # get user input for triangle size
     while True:

@@ -1,16 +1,16 @@
 """
 program_8.py
 
-Numpy and array example.
+numpy and array example.
 
-Author: Christopher Romo
+author: christopher romo
 """
 
 import numpy as np
 
 
 def main() -> None:
-    """Program entry point."""
+    """numpy and array example."""
 
     dimension = int(input("Enter dimension size: "))
 

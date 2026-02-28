@@ -1,14 +1,14 @@
 """
 program_2.py
 
-Object and class example.
+object and class example.
 
-Author: Christopher Romo
+author: christopher romo
 """
 
 
 class Car:
-    """A simple Car class."""
+    """the Car class creates a car object."""
 
     def __init__(self, color: str, mileage: int) -> None:
         self.color = color
@@ -19,7 +19,7 @@ class Car:
 
 
 def main() -> None:
-    """Program entry point."""
+    """object and class example."""
 
     # demonstration of the Car class
     car_one = Car("blue", 20000)

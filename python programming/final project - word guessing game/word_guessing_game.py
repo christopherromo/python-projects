@@ -1,11 +1,11 @@
 """
 word_guessing_game.py
 
-Word guessing game that fetches words from a website and stores them in an
-Excel file.
+word guessing game that fetches words from a website and stores them in an
+excel file.
 
-Author: Christopher Romo & Alyssa Walker
-Created: 2023-07-17
+author: christopher romo & alyssa walker
+created: 2023-07-17
 """
 
 import openpyxl
@@ -15,9 +15,8 @@ import bs4
 
 
 def guess_word() -> None:
-    """Function to play the word guessing game."""
+    """sets up and runs the word guessing game."""
 
-    # opens the excel workbook
     wb = openpyxl.load_workbook("random_words.xlsx")
     the_sheet = wb.active
 
@@ -32,7 +31,6 @@ def guess_word() -> None:
     display = ["_"] * len(word)
     print(" ".join(display))
 
-    # keeps track of guess count
     guess_count = 0
     mistakes_count = 0
 
@@ -67,14 +65,12 @@ def guess_word() -> None:
     else:
         print("You Lost! The word was:", word)
 
-    # close the workbook
     wb.close()
 
 
 def main() -> None:
-    """Program entry point."""
+    """parses website for words, saves them to an excel file, and starts the game."""
 
-    # opens the excel workbook
     wb = openpyxl.Workbook()
     the_sheet = wb.active
 
@@ -106,7 +102,6 @@ def main() -> None:
         the_sheet[the_cell] = element
         counter += 1
 
-    # saves the excel sheet
     wb.save("random_words.xlsx")
 
     # calls the guess_word function

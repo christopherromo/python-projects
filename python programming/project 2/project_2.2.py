@@ -1,15 +1,15 @@
 """
-homework_2.2.py
+project_2.2.py
 
-Counts the number of characters in a given string, excluding spaces.
+counts the number of characters in a given string, excluding spaces.
 
-Author: Christopher Romo
-Created: 2023-07-05
+author: christopher romo
+created: 2023-07-05
 """
 
 
 def main() -> None:
-    """Program entry point."""
+    """counts the number of characters in a given string, excluding spaces."""
 
     the_string = input("Please, enter a string: ")
     counter = 0

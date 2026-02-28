@@ -1,17 +1,17 @@
 """
 selection_sort.py
 
-Performs selection sort on a list of numbers.
+performs selection sort on a list of numbers.
 
-Author: Christopher Romo
-Created: 2024-02-08
+author: christopher romo
+created: 2024-02-08
 """
 
 import time
 
 
 def main() -> None:
-    """Program entry point."""
+    """performs selection sort on a list of numbers and calculates the time it takes to sort."""
 
     # read in the list from a file and grab the length
     # please be aware that sort_list3_input.txt can take a while to sort

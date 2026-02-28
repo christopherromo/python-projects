@@ -1,16 +1,16 @@
 """
 program_6.py
 
-Datetime and time example.
+datetime and time example.
 
-Author: Christopher Romo
+author: christopher romo
 """
 
 import datetime, time
 
 
 def main() -> None:
-    """Program entry point."""
+    """datetime and time example."""
 
     the_date = datetime.datetime(2026, 1, 5, 0, 0, 0)
 

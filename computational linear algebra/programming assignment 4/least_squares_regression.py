@@ -1,10 +1,10 @@
 """
 least_squares_regression.py
 
-Finds the least squares regression line for a set of coordinates.
+finds the least squares regression line for a set of coordinates.
 
-Author: Christopher Romo
-Created: 2024-04-30
+author: christopher romo
+created: 2024-04-30
 """
 
 import matplotlib.pyplot as plt
@@ -12,7 +12,7 @@ import numpy
 
 
 def main() -> None:
-    """Program entry point."""
+    """finds the least squares regression line for a set of coordinates."""
 
     # read in the information for coordinate matrix
     input_file = open("coordinates.txt", "r")
