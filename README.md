@@ -27,7 +27,7 @@ This a collection of Python projects from various classes I took at UCCS. They f
 
 **Key Takeaways:** Only "Python Programming" specifically focused on the language itself, while the rest of the classes had their own topics. Python is a high-level language that is both procedural and object-oriented, meaning most concepts from this language can be applied to most languages. I started by learning how to setup different environments and write Python code. Since Python is a simpler language, I was able to jump in quicker and use this language for several courses. With Python having a large range of libraries, exploring new topics was easy. Overall, I not only learned how to program with Python, I used it as tool to learn several other concepts in computer science.
 
-## Running the Files 🎬
+## Running the Projects 🎬
 
 1. Clone the repository.
 
